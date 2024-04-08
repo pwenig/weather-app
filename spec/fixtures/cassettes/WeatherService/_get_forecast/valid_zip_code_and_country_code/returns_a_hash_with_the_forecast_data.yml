@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=appid&zip=20500,US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenWeather Ruby Client/0.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 08 Apr 2024 17:59:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '480'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?zip=20500%2cus"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-77.0355,"lat":38.8946},"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"base":"stations","main":{"temp":294.58,"feels_like":293.64,"temp_min":290.97,"temp_max":296.55,"pressure":1019,"humidity":33},"visibility":10000,"wind":{"speed":4.63,"deg":170},"clouds":{"all":40},"dt":1712599057,"sys":{"type":2,"id":2002287,"country":"US","sunrise":1712572865,"sunset":1712619490},"timezone":-14400,"id":0,"name":"Washington","cod":200}'
+  recorded_at: Mon, 08 Apr 2024 17:59:19 GMT
+recorded_with: VCR 6.2.0
